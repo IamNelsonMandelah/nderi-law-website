@@ -48,7 +48,7 @@ nav { background: var(--warm-white); border-bottom: 1px solid var(--border); pos
 
 /* ── HERO ── */
 .hero { position: relative; height: 100vh; min-height: 620px; display: flex; align-items: center; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: url('../images/hero.jpg') center/cover no-repeat; filter: brightness(0.35); }
+.hero-bg { position: absolute; inset: 0; background: url('../images/ann-nderi.jpg') center top/cover no-repeat; filter: brightness(0.38); }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(44,26,14,0.7) 0%, rgba(200,136,42,0.15) 100%); }
 .hero-content { position: relative; max-width: 1200px; margin: 0 auto; padding: 0 24px; color: #fff; }
 .hero-eyebrow { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber-light); margin-bottom: 16px; opacity: 0; animation: fadeUp 0.8s 0.3s forwards; }
@@ -83,7 +83,7 @@ section { padding: 96px 24px; }
 .about { background: var(--cream); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 .about-photo-wrap { position: relative; }
-.about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 4px; }
+.about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top center; border-radius: 0; display: block; mix-blend-mode: multiply; background: var(--cream); }
 .about-badge { position: absolute; bottom: -20px; right: -20px; background: var(--espresso); color: var(--amber-light); padding: 20px 24px; border-radius: 4px; font-family: 'Playfair Display', serif; font-size: 1rem; font-style: italic; max-width: 220px; line-height: 1.4; box-shadow: 0 8px 32px rgba(44,26,14,0.25); }
 .about-creds { display: flex; flex-direction: column; gap: 10px; margin: 28px 0; }
 .cred { display: flex; align-items: flex-start; gap: 12px; font-size: 0.88rem; color: var(--muted); }
