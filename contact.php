@@ -8,9 +8,9 @@ header('Content-Type: application/json');
 header('X-Content-Type-Options: nosniff');
 
 // ── Configuration ──────────────────────────────────────────
-define('TO_EMAIL',   'info@nderilawassociates.co.ke');   // ← Ann's real email
+define('TO_EMAIL',   'info@nderilawassociates.com');   // ← Ann's real email
 define('TO_NAME',    'Nderi Law & Associates');
-define('FROM_EMAIL', 'noreply@nderilawassociates.co.ke');
+define('FROM_EMAIL', 'noreply@nderilawassociates.com');
 define('SITE_NAME',  'Nderi Law & Associates Advocates');
 // ───────────────────────────────────────────────────────────
 
@@ -78,7 +78,7 @@ $reply_body .= "We have received your enquiry";
 if ($matter) { $reply_body .= " regarding {$matter}"; }
 $reply_body .= " and a member of our team will be in touch with you within 1–2 business days.\n\n";
 $reply_body .= "If your matter is urgent, please call us directly:\n";
-$reply_body .= "+254 700 000 000\n\n";  // ← replace with Ann's real number
+$reply_body .= "0119 458 686\n\n";  // ← replace with Ann's real number
 $reply_body .= "Warm regards,\n";
 $reply_body .= "The Team at Nderi Law & Associates Advocates\n";
 $reply_body .= "Advocates of the High Court of Kenya\n";
