@@ -48,7 +48,7 @@ nav { background: var(--warm-white); border-bottom: 1px solid var(--border); pos
 
 /* ── HERO ── */
 .hero { position: relative; height: 100vh; min-height: 620px; display: flex; align-items: center; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: url('../images/ann-nderi.jpg') center 25%/cover no-repeat; }
+.hero-bg { position: absolute; inset: 0; background: url('../images/ann-nderi.jpg') center 30%/cover no-repeat; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(44,26,14,0.88) 0%, rgba(44,26,14,0.75) 45%, rgba(44,26,14,0.2) 100%); }
 .hero-content { position: relative; max-width: 1200px; margin: 0 auto; padding: 0 24px; color: #fff; }
 .hero-eyebrow { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber-light); margin-bottom: 16px; opacity: 0; animation: fadeUp 0.8s 0.3s forwards; }
