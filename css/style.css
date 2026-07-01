@@ -173,18 +173,62 @@ footer { background: var(--espresso); color: rgba(255,255,255,0.65); padding: 64
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.8rem; }
 
 /* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .about-text { padding: 64px 48px; }
+  .gov-grid { gap: 40px; }
+}
 @media (max-width: 900px) {
   .about-grid, .gov-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-top { grid-template-columns: 1fr 1fr; }
+  .about-photo { min-height: 420px; }
+  .about-photo-wrap::after { background: linear-gradient(to bottom, transparent 80%, var(--cream) 100%); }
 }
 @media (max-width: 768px) {
   .hamburger { display: flex; }
   .nav-links { display: none; }
-  .about-badge { right: 0; bottom: -16px; }
+  .nav-brand-text .firm { font-size: 0.92rem; }
+  .about-badge { right: 0; bottom: -16px; max-width: 180px; padding: 16px 18px; font-size: 0.9rem; }
+  .about-text { padding: 48px 24px; }
   .team-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .hero { min-height: 560px; }
+  .hero-sub { max-width: 100%; }
+  .img-band { height: 300px; }
+  .stats-inner { gap: 24px; }
+  .practice-grid { grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); }
+}
+@media (max-width: 600px) {
+  .topbar-inner { flex-direction: column; align-items: flex-start; gap: 4px; }
+  section { padding: 72px 20px; }
+  .hero-content { padding: 0 20px; }
+  .hero-title { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { text-align: center; width: 100%; }
+  .about-photo { min-height: 320px; }
+  .about-creds { gap: 12px; }
+  .gov-org { flex-wrap: wrap; }
+  .contact-grid { gap: 48px; }
 }
 @media (max-width: 480px) {
   section { padding: 64px 16px; }
   .hero-title { font-size: 2rem; }
+  .hero { min-height: 520px; }
+  .nav-inner { padding: 0 16px; height: 62px; }
+  .nav-brand .emblem { width: 36px; height: 36px; }
+  .nav-brand-text .tagline { display: none; }
+  .stats { padding: 36px 16px; }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .stat-num { font-size: 2rem; }
+  .practice-grid { grid-template-columns: 1fr; gap: 20px; }
+  .p-card { padding: 28px 24px; }
+  .img-band { height: 260px; }
+  .img-band-quote blockquote { font-size: 1.1rem; }
+  .team-info { padding: 22px; }
+  .contact-form .form-group { margin-bottom: 16px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 360px) {
+  .hero-title { font-size: 1.7rem; }
+  .stats-inner { grid-template-columns: 1fr 1fr; }
+  .btn { padding: 12px 24px; font-size: 0.82rem; }
 }
